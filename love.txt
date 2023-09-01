@@ -1,3 +1,2 @@
-I love Fortran
-I love pascal
-I love mainframe
+I love C++
+I love scala
