@@ -51,3 +51,8 @@ for name,number in d.items():
     print(name,number)
 print(d.keys())
 print(d.values())
+
+l = ["pranav","himanshu","manish"]
+f = "manish"
+if f in l:
+    print("true")
