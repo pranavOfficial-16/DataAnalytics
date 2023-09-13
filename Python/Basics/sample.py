@@ -9,3 +9,6 @@ def verify(a,b):
 
 c,d = 5,7
 verify(c,d)
+
+print(type('?'))
+print(type("?"))
