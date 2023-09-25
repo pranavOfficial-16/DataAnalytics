@@ -1,4 +1,6 @@
 # read file
+import os.path
+
 f = open("../Data/funny.txt", "r")
 for line in f:
     print(line)
@@ -11,7 +13,7 @@ with open("../Data/funny.txt", "r") as f:
 
 # readlines()
 with open("../Data/funny.txt", "r") as f:
-    lines = f.readlines()
+    lines = f.read()
     print(lines)
 
 # write file
@@ -49,3 +51,9 @@ for player, score_list in player_scores.items():
     avg_score = sum(score_list) / len(score_list)
 
     print(f"{player}==>Min:{min_score}, Max:{max_score}, Avg:{avg_score}")
+
+if os.path.exists("../Data/cost.txt"):
+    print("true")
+
+with open("../Data/cost.txt","w") as savedFile:
+    savedFile.write("Hey man whats up!")
