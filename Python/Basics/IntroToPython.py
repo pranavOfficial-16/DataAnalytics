@@ -44,6 +44,7 @@ d = {
     'sneha': 9876543654
 }
 print(d)
+print(list(d)[0])
 print(d['pranav'])
 d['dhanya'] = 7876543566
 print(d)
@@ -56,3 +57,21 @@ l = ["pranav","himanshu","manish"]
 f = "manish"
 if f in l:
     print("true")
+tags = {
+            'keys'    : False,
+            'name'    : True,
+            'VR'      : True,
+            'content' : True
+}
+
+result = all(value for value in tags.values())
+print(f"result:{result}")
+is_selected = 1
+if is_selected:
+    print("hey")
+def fun():
+    a = True
+    b = True
+    return a and b
+
+print(fun())
