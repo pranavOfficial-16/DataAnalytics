@@ -59,3 +59,34 @@ else:
 
 patient_info = "<empty series description>, 2017-12-11 <invalid time>.<empty series description>, 2017-12-11 12:17\nCT, ORIGINAL\PRIMARY\AXIAL\n85 Slices, Thickness: 1.25mm, KVP: 120"
 print(patient_info.replace("_","\_").replace(".","\.").replace(r'\n','\n'))
+
+startpoint = ['10,20']
+startpoint = ' '.join([str(i) for i in startpoint])
+print(startpoint)
+print(type(startpoint))
+res = [eval(i) for i in startpoint.split(',')][0]
+print(f"{res, type(res), res}")
+
+
+n = 5
+l = '300,132,451,234,332,324,215,265,235,182'
+ans = [eval(i) for i in l.split(',')]
+print(f"{ans} {type(ans)}")
+MyList = [[] for i in range(n)]
+count = 0
+for i in range(0,n):
+    MyList[i].append(ans[count])
+    count+=1
+    MyList[i].append(ans[count])
+    count+=1
+print(f"{len(MyList)-1}")
+count = 0
+for i,j in MyList:
+    if count == len(MyList)-1:
+        print(f"ya {i} {j}", end='\n')
+        break
+    print(f"{i} {j}",end='\n')
+    count+=1
+
+
+
