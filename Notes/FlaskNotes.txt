@@ -1,0 +1,18 @@
+What is Flask?
+    It is a Web application Framework written in python
+    We can do End to End project with Flask
+    It is based on WSGI concept and Jinja2 template engine
+
+WSGI - Web server Gateway Interface
+    It is a standard protocol
+    It is used to communicate from web server to the application (web,app,... etc)
+
+Jinja2 template engine
+    Popular template engine for python
+    It is a Web templating system
+    
+How to run Flask in powershell?
+    virtualenv env
+    .\env\Scripts\activate.ps1
+    pip install flask
+    python .\app.py
